@@ -14,6 +14,7 @@
 @property (nonatomic) NSTimeInterval timeLimit;
 @property (nonatomic, retain) NSString *status;
 @property (assign, nonatomic, readonly) double percent;
-//@property (nonatomic, strong) UIImageView *imageView;
-
+//@property (nonatomic)
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UIView *alphaPauseView;
 @end

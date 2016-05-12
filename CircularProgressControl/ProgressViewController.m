@@ -77,10 +77,10 @@
         self.session.finishDate = nil;
         self.session.state = kSessionStateStart;
         
-        UIColor *tintColor = [UIColor colorWithRed:184/255.0 green:233/255.0 blue:134/255.0 alpha:1.0];
+        UIColor *tintColor = [UIColor colorWithRed:231.7/255.0 green:119.5/255.0 blue:0.0/255.0 alpha:1.0];
         self.circleProgressView.status = NSLocalizedString(@"circle-progress-view.status-in-progress", nil);
         self.circleProgressView.tintColor = tintColor;
-        self.circleProgressView.elapsedTime = 0;
+        self.circleProgressView.elapsedTime = self.session.progressTime;
         
         [self.actionButton setTitle:NSLocalizedString(@"progress-view-controller.action-button.title-stop", nil) forState:UIControlStateNormal];
         [self.actionButton setTintColor:tintColor];

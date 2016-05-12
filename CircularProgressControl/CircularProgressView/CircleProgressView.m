@@ -86,17 +86,27 @@
     self.clipsToBounds = false;
     
     
-    //    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(4, 4, self.frame.size.width - 8, self.frame.size.height - 8)];
-    //    self.imageView.image = [UIImage imageNamed:@"image.jpg"];
-    //    self.imageView.layer.cornerRadius = self.frame.size.width/2;
-    //    [self addSubview:self.imageView];
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(2, 2, self.frame.size.width - 4, self.frame.size.height - 4)];
+    self.imageView.image = [UIImage imageNamed:@"image.jpg"];
+    self.imageView.layer.cornerRadius = self.imageView.frame.size.width/2;
+    //[self.layer addSublayer:self.imageView.layer];
+    
+    CALayer *imageLayer = self.imageView.layer;
+    [imageLayer setCornerRadius:self.imageView.frame.size.width/2];
+    //[imageLayer setBorderWidth:1];
+    [imageLayer setMasksToBounds:YES];
+    [self.layer addSublayer:imageLayer];
+    
+    self.alphaPauseView = [[UIView alloc] initWithFrame:CGRectMake(2, 2, self.frame.size.width, self.frame.size.width)];
+    self.alphaPauseView.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.50];
+    self.alphaPauseView.layer.cornerRadius = self.frame.size.width/2;
+    [self.layer addSublayer:self.alphaPauseView.layer];
+    
     //add Progress layer
     self.progressLayer = [[CircleShapeLayer alloc] init];
     self.progressLayer.frame = self.bounds;
     self.progressLayer.backgroundColor = [UIColor clearColor].CGColor;
     [self.layer addSublayer:self.progressLayer];
-    
-    
 }
 
 - (void)setTintColor:(UIColor *)tintColor {
