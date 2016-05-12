@@ -11,11 +11,9 @@
 @interface CircleProgressView : UIControl
 
 @property (nonatomic) NSTimeInterval elapsedTime;
-
 @property (nonatomic) NSTimeInterval timeLimit;
-
 @property (nonatomic, retain) NSString *status;
-
 @property (assign, nonatomic, readonly) double percent;
+//@property (nonatomic, strong) UIImageView *imageView;
 
 @end

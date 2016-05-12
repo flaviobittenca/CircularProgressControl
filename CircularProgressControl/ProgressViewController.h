@@ -12,7 +12,7 @@
 
 @interface ProgressViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet CircleProgressView *circleProgressView;
+@property (strong, nonatomic) CircleProgressView *circleProgressView;
 
 @property (strong, nonatomic) IBOutlet UIButton *actionButton;
 

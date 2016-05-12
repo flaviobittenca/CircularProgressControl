@@ -18,6 +18,7 @@
 		873C0F731A20DE4A006BE395 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 873C0F721A20DE4A006BE395 /* ProgressViewController.m */; };
 		873C0F761A2159DB006BE395 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 873C0F751A2159DB006BE395 /* Session.m */; };
 		873C0F7A1A216BE9006BE395 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 873C0F7C1A216BE9006BE395 /* Localizable.strings */; };
+		B524F4C41CE40ADC00DD9B43 /* image@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B524F4C31CE40ADC00DD9B43 /* image@2x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		873C0F7B1A216BE9006BE395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		873C0F7D1A2170A9006BE395 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		873C0F7E1A2170AA006BE395 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B524F4C31CE40ADC00DD9B43 /* image@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image@2x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		873C0F3F1A20D35F006BE395 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B524F4C31CE40ADC00DD9B43 /* image@2x.jpg */,
 				873C0F491A20D360006BE395 /* Main.storyboard */,
 				873C0F4E1A20D360006BE395 /* LaunchScreen.xib */,
 				873C0F401A20D35F006BE395 /* Info.plist */,
@@ -279,6 +282,7 @@
 			files = (
 				873C0F4B1A20D360006BE395 /* Main.storyboard in Resources */,
 				873C0F7A1A216BE9006BE395 /* Localizable.strings in Resources */,
+				B524F4C41CE40ADC00DD9B43 /* image@2x.jpg in Resources */,
 				873C0F501A20D360006BE395 /* LaunchScreen.xib in Resources */,
 				873C0F4D1A20D360006BE395 /* Images.xcassets in Resources */,
 			);
@@ -506,6 +510,7 @@
 				873C0F611A20D360006BE395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		873C0F621A20D360006BE395 /* Build configuration list for PBXNativeTarget "CircularProgressControlTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +519,7 @@
 				873C0F641A20D360006BE395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
