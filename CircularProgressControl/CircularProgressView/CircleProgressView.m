@@ -32,6 +32,14 @@
     [self setupViews];
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if(self) {
+        [self setupViews];
+    }
+    return self;
+}
+
 - (void)layoutSubviews {
     [super layoutSubviews];
     
@@ -89,7 +97,7 @@
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(2, 2, self.frame.size.width - 4, self.frame.size.height - 4)];
     self.imageView.image = [UIImage imageNamed:@"image.jpg"];
     self.imageView.layer.cornerRadius = self.imageView.frame.size.width/2;
-    //[self.layer addSublayer:self.imageView.layer];
+    //[self.layer addSublayer:self.imageView.layer];
     
     CALayer *imageLayer = self.imageView.layer;
     [imageLayer setCornerRadius:self.imageView.frame.size.width/2];
@@ -97,7 +105,7 @@
     [imageLayer setMasksToBounds:YES];
     [self.layer addSublayer:imageLayer];
     
-    self.alphaPauseView = [[UIView alloc] initWithFrame:CGRectMake(2, 2, self.frame.size.width, self.frame.size.width)];
+    self.alphaPauseView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.width)];
     self.alphaPauseView.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.50];
     self.alphaPauseView.layer.cornerRadius = self.frame.size.width/2;
     [self.layer addSublayer:self.alphaPauseView.layer];
